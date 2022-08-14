@@ -25,9 +25,9 @@ class MainActivity : ComponentActivity() {
             MagicTabLayoutTheme {
 
                 val tabs = listOf(
-                    MagicTabItem(R.drawable.ic_baseline_home_24, Color.Black, "Home") { TabItemTest("tab1") },
-                    MagicTabItem(R.drawable.ic_baseline_star_24, Color.Black, "Favorites") { TabItemTest(item = "tab2") },
-                    MagicTabItem(R.drawable.ic_baseline_star_24, Color.Black, "Settings") { TabItemTest(item = "tab3") },
+                    MagicTabItem(icon = R.drawable.ic_baseline_home_24, iconColor = Color.Black, title = "Home") { TabItemTest(item = "tab1") },
+                    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Favorites") { TabItemTest(item = "tab2") },
+                    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Settings") { TabItemTest(item = "tab3") },
                 )
 
                 Scaffold() {

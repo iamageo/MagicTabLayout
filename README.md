@@ -1,4 +1,4 @@
-<h1 align="center">Magic TabLayout</h1><br/>
+<h1 align="center">MagicTabLayout</h1><br/>
 <p align="center"> 
 An efficient TabLayout library implemented in Jetpack Compose 🚀
 </p>
@@ -17,7 +17,12 @@ An efficient TabLayout library implemented in Jetpack Compose 🚀
 
 ## Screenshots
 
+
+## This component was based on Twitter's TabLayout, reference below
+
+
 ## Including in your project
+[![](https://jitpack.io/v/iamageo/MagicTabLayout.svg)](https://jitpack.io/#iamageo/MagicTabLayout)
 
 ### Gradle
 Add below codes to your **root** `build.gradle` file (not your module build.gradle file).
@@ -32,7 +37,7 @@ allprojects {
 And add a dependency code to your **module**'s `build.gradle` file.
 ```gradle
 dependencies {
-        
+    implementation 'com.github.iamageo:MagicTabLayout:1.0.0'     
 }
 ```
 
@@ -40,7 +45,34 @@ dependencies {
 Add in you Activity file.
 
 ```kotlin
+/* specify your tabs */
+val tabs = listOf(
+    MagicTabItem(icon = R.drawable.ic_baseline_home_24, iconColor = Color.Black, title = "Home") { TabItemTest(item = "tab1") },
+    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Favorites") { TabItemTest(item = "tab2") },
+    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Settings") { TabItemTest(item = "tab3") },
+)
 
+Column() {
+    MagicTabLayout(
+        tabIndicatorColor = Color.Blue,
+        tabList = tabs,
+    )
+}
+
+/* in this case TabItemTest contains bellow composable function, but you can pass your functions */
+@Composable
+fun TabItemTest(item: String) {
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = item,
+            color = Color.Black,
+        )
+    }
+}
 ```
 
 ## License
