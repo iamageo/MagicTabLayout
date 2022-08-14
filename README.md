@@ -19,6 +19,7 @@ An efficient TabLayout library implemented in Jetpack Compose 🚀
 
 
 ## This component was based on Twitter's TabLayout, reference below
+![referência_twitter](https://user-images.githubusercontent.com/26925002/184557311-15b31d84-c73e-4c8a-b24a-e44ef7e4e43a.PNG)
 
 
 ## Including in your project
