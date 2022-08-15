@@ -15,12 +15,17 @@ An efficient TabLayout library implemented in Jetpack Compose 🚀
 
 </p>
 
-## Screenshots
+## Anatomy
+![anatomy_magictablayout](https://user-images.githubusercontent.com/26925002/184643732-fa19fe40-2a1a-49e7-b7e6-975d60a8d98b.png)
+1. MagicTabLayout
+2. tabIndicatorColor (Optional, default value: blue)
+3. MagicTabItem
+4. MagicTabItem title
 
 
-## This component was based on Twitter's TabLayout, reference below
-![referência_twitter](https://user-images.githubusercontent.com/26925002/184557311-15b31d84-c73e-4c8a-b24a-e44ef7e4e43a.PNG)
 
+### This component was based on Twitter's TabLayout, reference below
+<img src="https://user-images.githubusercontent.com/26925002/184557311-15b31d84-c73e-4c8a-b24a-e44ef7e4e43a.PNG" align="center" width="50%"/>
 
 ## Including in your project
 [![](https://jitpack.io/v/iamageo/MagicTabLayout.svg)](https://jitpack.io/#iamageo/MagicTabLayout)
@@ -48,14 +53,15 @@ Add in you Activity file.
 ```kotlin
 /* specify your tabs */
 val tabs = listOf(
-    MagicTabItem(icon = R.drawable.ic_baseline_home_24, iconColor = Color.Black, title = "Home") { TabItemTest(item = "tab1") },
-    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Favorites") { TabItemTest(item = "tab2") },
-    MagicTabItem(icon = R.drawable.ic_baseline_star_24, iconColor = Color.Black, title = "Settings") { TabItemTest(item = "tab3") },
+    MagicTabItem(title = "Home") { TabItemTest(item = "tab1") },
+    MagicTabItem(title = "Favorites") { TabItemTest(item = "tab2") },
+    MagicTabItem(title = "Settings") { TabItemTest(item = "tab3") },
 )
 
 Column() {
     MagicTabLayout(
         tabIndicatorColor = Color.Blue,
+        tabColor = Color.White,
         tabList = tabs,
     )
 }
