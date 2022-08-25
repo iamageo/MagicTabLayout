@@ -16,12 +16,11 @@ An efficient TabLayout library implemented in Jetpack Compose 🚀
 </p>
 
 ## Anatomy
-![anatomy_magictablayout](https://user-images.githubusercontent.com/26925002/184643732-fa19fe40-2a1a-49e7-b7e6-975d60a8d98b.png)
+![banner_magic_tab_layout](https://user-images.githubusercontent.com/26925002/186786657-432fe672-0eb8-4502-af00-e0f2b6dd81eb.png)
 1. MagicTabLayout
 2. tabIndicatorColor (Optional, default value: blue)
 3. MagicTabItem
 4. MagicTabItem title
-
 
 
 ### This component was based on Twitter's TabLayout, reference below
