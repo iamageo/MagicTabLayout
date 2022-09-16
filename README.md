@@ -22,10 +22,6 @@ An efficient TabLayout library implemented in Jetpack Compose 🚀
 3. MagicTabItem
 4. MagicTabItem title
 
-
-### This component was based on Twitter's TabLayout, reference below
-<img src="https://user-images.githubusercontent.com/26925002/184557311-15b31d84-c73e-4c8a-b24a-e44ef7e4e43a.PNG" align="center" width="50%"/>
-
 ## Including in your project
 [![](https://jitpack.io/v/iamageo/MagicTabLayout.svg)](https://jitpack.io/#iamageo/MagicTabLayout)
 
@@ -42,7 +38,7 @@ allprojects {
 And add a dependency code to your **module**'s `build.gradle` file.
 ```gradle
 dependencies {
-    implementation 'com.github.iamageo:MagicTabLayout:1.0.0'     
+    implementation 'com.github.iamageo:MagicTabLayout:1.0.1'     
 }
 ```
 
