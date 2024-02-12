@@ -15,9 +15,10 @@ fun MagicTabLayout(
     tabList: List<MagicTabItem>,
     tabColor: Color = Color.White,
     tabIndicatorColor: Color = Color.Blue,
+    initialPage: Int = 0,
 ) {
 
-    val pagerState = rememberPagerState(pageCount = tabList.size)
+    val pagerState = rememberPagerState(initialPage = initialPage)
 
     Column(
         modifier = modifier.background(tabColor)
