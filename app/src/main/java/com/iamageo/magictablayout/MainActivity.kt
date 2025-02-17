@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     MagicTabItem(title = "Settings") { TabItemTest(item = "tab3") },
                 )
 
-                Scaffold() {
+                Scaffold() { it
                     Column() {
                         MagicTabLayout(
                             tabIndicatorColor = Color.Blue,
