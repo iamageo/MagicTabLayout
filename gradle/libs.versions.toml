@@ -1,7 +1,7 @@
 [versions]
 android = "8.7.3"
 kotlin = "1.8.0"
-coreKtx = "1.15.0"
+coreKtx = "1.17.0"
 compose = "1.7.8"
 lifecycle = "2.8.7"
 activityCompose = "1.10.0"
