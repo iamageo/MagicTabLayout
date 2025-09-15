@@ -1,4 +1,10 @@
 [versions]
+compile-sdk = "36"
+min-sdk = "21"
+target-sdk = "36"
+java = "17"
+jvm = "17"
+kotlin-compile = "1.4.0"
 android = "8.13.0"
 kotlin = "1.8.0"
 coreKtx = "1.15.0"

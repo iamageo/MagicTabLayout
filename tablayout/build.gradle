@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdk libs.versions.compile.sdk.get().toInteger()
     namespace 'com.iamageo.tablayout'
 
     defaultConfig {
-        minSdk 21
-        targetSdk 35
+        minSdk libs.versions.min.sdk.get().toInteger()
+        targetSdk libs.versions.target.sdk.get().toInteger()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -22,14 +22,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.toVersion(libs.versions.java.get())
+        targetCompatibility JavaVersion.toVersion(libs.versions.java.get())
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17
+        jvmTarget = libs.versions.jvm.get()
     }
 
     buildFeatures {
@@ -37,7 +37,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion  "1.4.0"
+        kotlinCompilerExtensionVersion libs.versions.kotlin.compile.get()
     }
 }
 
