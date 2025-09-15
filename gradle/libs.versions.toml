@@ -6,18 +6,19 @@ java = "17"
 jvm = "17"
 kotlin-compile = "1.4.0"
 android = "8.13.0"
-kotlin = "1.8.0"
-coreKtx = "1.15.0"
-compose = "1.7.8"
-lifecycle = "2.8.7"
-activityCompose = "1.10.0"
-accompanist = "0.28.0"
+kotlin = "2.2.20"
+coreKtx = "1.17.0"
+compose = "1.9.1"
+lifecycle = "2.9.3"
+activityCompose = "1.11.0"
+accompanist = "0.36.0"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android" }
 android-library = { id = "com.android.library", version.ref = "android" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 maven-publish = { id = "maven-publish" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
