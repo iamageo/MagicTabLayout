@@ -1,16 +1,16 @@
 [versions]
 compile-sdk = "36"
-min-sdk = "21"
+min-sdk = "23"
 target-sdk = "36"
 java = "17"
 jvm = "17"
 kotlin-compile = "1.4.0"
-android = "8.13.0"
+android = "8.13.1"
 kotlin = "2.2.21"
 coreKtx = "1.17.0"
 compose = "1.10.0"
 lifecycle = "2.10.0"
-activityCompose = "1.11.0"
+activityCompose = "1.12.1"
 accompanist = "0.36.0"
 
 [plugins]
